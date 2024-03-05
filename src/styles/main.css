@@ -1,0 +1,12 @@
+@import "../../node_modules/normalize.css/normalize.css";
+@import "./components/photoCard.css";
+@import "./components/quotesCard.css";
+@import "./components/searchBar.css";
+@import "./components/weatherCard.css";
+
+*,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
