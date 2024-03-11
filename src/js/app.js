@@ -1,5 +1,17 @@
-const weatherForm = document.querySelector(".weather-form");
-const cityInput = document.querySelector(".city-input");
-const card = document.querySelector(".weather-card");
+import { displayWeather, getWeatherData } from "../js/components/searchBar.js";
 
-weatherForm.addEventListener("submit", (e) => {});
+document.addEventListener("DOMContentLoaded", () => {
+  const form = document.querySelector(".weather-form");
+
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    const city = document.querySelector(".city-input").value;
+    if (city) {
+      try {
+        await getWeatherData(city);
+      } catch (error) {
+        console.error("There was an error retrieving the weather data", error);
+      }
+    }
+  });
+});

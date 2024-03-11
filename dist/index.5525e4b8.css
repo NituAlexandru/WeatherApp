@@ -180,7 +180,7 @@ summary {
   display: list-item;
 }
 
-template, [hidden], .weather-card {
+template, [hidden] {
   display: none;
 }
 
@@ -188,5 +188,10 @@ template, [hidden], .weather-card {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 /*# sourceMappingURL=index.5525e4b8.css.map */
