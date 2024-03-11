@@ -25,7 +25,7 @@
 91C:\Users\40721\Desktop\Curs GoIT\WeatherApp\node_modules\type-fest\ts41\delimiter-case.d.ts133540506978938530 0
 77C:\Users\40721\Desktop\Curs GoIT\WeatherApp\node_modules\ordered-binary\.idea133540506979267649 1
 86C:\Users\40721\Desktop\Curs GoIT\WeatherApp\node_modules\lightningcss\node\ast.js.flow133540506977831491 0
-48C:\Users\40721\Desktop\Curs GoIT\WeatherApp\dist133546582574279777 1
+48C:\Users\40721\Desktop\Curs GoIT\WeatherApp\dist133546603225766206 1
 80C:\Users\40721\Desktop\Curs GoIT\WeatherApp\node_modules\lines-and-columns\build133540506977582155 1
 65C:\Users\40721\Desktop\Curs GoIT\WeatherApp\node_modules\entities133540506979776282 1
 106C:\Users\40721\Desktop\Curs GoIT\WeatherApp\node_modules\caniuse-lite\data\features\link-rel-preconnect.js133540506989893733 0
@@ -157,7 +157,7 @@
 62C:\Users\40721\Desktop\Curs GoIT\WeatherApp\node_modules\tslib133540506979167929 1
 77C:\Users\40721\Desktop\Curs GoIT\WeatherApp\node_modules\mime-types\README.md133545733591125285 0
 103C:\Users\40721\Desktop\Curs GoIT\WeatherApp\node_modules\caniuse-lite\data\features\domcontentloaded.js133540506987869140 0
-81C:\Users\40721\Desktop\Curs GoIT\WeatherApp\src\styles\components\weatherCard.css133545728288165395 0
+81C:\Users\40721\Desktop\Curs GoIT\WeatherApp\src\styles\components\weatherCard.css133546603225595670 0
 108C:\Users\40721\Desktop\Curs GoIT\WeatherApp\node_modules\csso\node_modules\mdn-data\css\syntaxes.schema.json133540506980096822 0
 110C:\Users\40721\Desktop\Curs GoIT\WeatherApp\node_modules\posthtml\node_modules\posthtml-parser\dist\index.d.ts133540506978120719 0
 80C:\Users\40721\Desktop\Curs GoIT\WeatherApp\node_modules\color-name\package.json133540506976385354 0
@@ -240,7 +240,7 @@
 81C:\Users\40721\Desktop\Curs GoIT\WeatherApp\node_modules\safe-buffer\package.json133540506977083661 0
 99C:\Users\40721\Desktop\Curs GoIT\WeatherApp\node_modules\csso\node_modules\css-tree\data\patch.json133540506987448892 0
 100C:\Users\40721\Desktop\Curs GoIT\WeatherApp\node_modules\htmlnano\lib\modules\removeOptionalTags.mjs133540506984350339 0
-76C:\Users\40721\Desktop\Curs GoIT\WeatherApp\src\js\components\weatherCard.js133546582159727758 0
+76C:\Users\40721\Desktop\Curs GoIT\WeatherApp\src\js\components\weatherCard.js133546602721196872 0
 96C:\Users\40721\Desktop\Curs GoIT\WeatherApp\node_modules\css-tree\lib\syntax\config\generator.js133540506986438802 0
 80C:\Users\40721\Desktop\Curs GoIT\WeatherApp\node_modules\parse-json\package.json133540506977063535 0
 114C:\Users\40721\Desktop\Curs GoIT\WeatherApp\node_modules\@swc\helpers\_\_define_enumerable_properties\package.json133540506987159672 0
@@ -786,7 +786,7 @@
 76C:\Users\40721\Desktop\Curs GoIT\WeatherApp\node_modules\yallist\iterator.js133540506976674578 0
 100C:\Users\40721\Desktop\Curs GoIT\WeatherApp\node_modules\caniuse-lite\data\features\text-overflow.js133540506992080730 0
 72C:\Users\40721\Desktop\Curs GoIT\WeatherApp\node_modules\yallist\LICENSE133540506976325519 0
-66C:\Users\40721\Desktop\Curs GoIT\WeatherApp\dist\index.59a40e7a.js133546582574249866 0
+66C:\Users\40721\Desktop\Curs GoIT\WeatherApp\dist\index.59a40e7a.js133546602721568553 0
 133C:\Users\40721\Desktop\Curs GoIT\WeatherApp\node_modules\@parcel\optimizer-htmlnano\node_modules\mdn-data\api\inheritance.schema.json133540506979118040 0
 111C:\Users\40721\Desktop\Curs GoIT\WeatherApp\node_modules\csso\node_modules\css-tree\lib\syntax\config\walker.js133540506987408997 0
 84C:\Users\40721\Desktop\Curs GoIT\WeatherApp\node_modules\source-map-js\source-map.js133540506978759020 0
@@ -1280,7 +1280,7 @@
 73C:\Users\40721\Desktop\Curs GoIT\WeatherApp\node_modules\semver\README.md133540506981554692 0
 91C:\Users\40721\Desktop\Curs GoIT\WeatherApp\node_modules\svgo\plugins\removeStyleElement.js133540506983343027 0
 84C:\Users\40721\Desktop\Curs GoIT\WeatherApp\node_modules\svgo\plugins\removeTitle.js133540506983382920 0
-67C:\Users\40721\Desktop\Curs GoIT\WeatherApp\dist\index.5525e4b8.css133546581910494504 0
+67C:\Users\40721\Desktop\Curs GoIT\WeatherApp\dist\index.5525e4b8.css133546603225746276 0
 76C:\Users\40721\Desktop\Curs GoIT\WeatherApp\node_modules\js-yaml\lib\type.js133540506980515689 0
 85C:\Users\40721\Desktop\Curs GoIT\WeatherApp\node_modules\msgpackr-extract\binding.gyp133540506977163286 0
 98C:\Users\40721\Desktop\Curs GoIT\WeatherApp\node_modules\csso\cjs\replace\property\font-weight.cjs133540506979867429 0
@@ -4678,7 +4678,7 @@
 94C:\Users\40721\Desktop\Curs GoIT\WeatherApp\node_modules\@swc\helpers\_\_sliced_to_array_loose133540506987698221 1
 78C:\Users\40721\Desktop\Curs GoIT\WeatherApp\node_modules\@parcel\optimizer-css133540506999206056 1
 102C:\Users\40721\Desktop\Curs GoIT\WeatherApp\node_modules\@swc\helpers\_\_tagged_template_literal_loose133540506987758076 1
-70C:\Users\40721\Desktop\Curs GoIT\WeatherApp\dist\index.59a40e7a.js.map133546582574269796 0
+70C:\Users\40721\Desktop\Curs GoIT\WeatherApp\dist\index.59a40e7a.js.map133546602721598486 0
 92C:\Users\40721\Desktop\Curs GoIT\WeatherApp\node_modules\@swc\helpers\_\_to_consumable_array133540506987819284 1
 85C:\Users\40721\Desktop\Curs GoIT\WeatherApp\node_modules\@swc\helpers\_\_to_primitive133540506987839225 1
 85C:\Users\40721\Desktop\Curs GoIT\WeatherApp\node_modules\@swc\helpers\_\_ts_generator133540506987869140 1
@@ -6120,4 +6120,4 @@
 75C:\Users\40721\Desktop\Curs GoIT\WeatherApp\dist\WeatherApp.3464ddca.js.map133541458828640308 0
 59C:\Users\40721\Desktop\Curs GoIT\WeatherApp\dist\index.html133546558896617144 0
 74C:\Users\40721\Desktop\Curs GoIT\WeatherApp\src\js\components\searchBar.js133546582573840937 0
-71C:\Users\40721\Desktop\Curs GoIT\WeatherApp\dist\index.5525e4b8.css.map133546581910524416 0
+71C:\Users\40721\Desktop\Curs GoIT\WeatherApp\dist\index.5525e4b8.css.map133546603225766206 0

@@ -184,6 +184,44 @@ template, [hidden] {
   display: none;
 }
 
+#weather-container {
+  justify-content: center;
+  margin-top: 20px;
+  display: flex;
+}
+
+.weather-card {
+  text-align: center;
+  background-color: #102136;
+  border-radius: 10px;
+  width: 300px;
+  padding: 20px;
+  box-shadow: 10px 14px 18px #0003;
+}
+
+.weather-icon {
+  width: 100px;
+  height: auto;
+}
+
+.city-name {
+  color: #fff;
+  margin: 20px 0 10px;
+  font-size: 24px;
+}
+
+.temperature, .min-max-temp, .humidity, .pressure, .wind-speed, .sunrise-sunset, .feels-like, .current-date, .current-time, .weather-description {
+  color: #fff;
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+.temperature {
+  color: #fff;
+  font-size: 60px;
+  font-weight: 600;
+}
+
 *, body {
   box-sizing: border-box;
   margin: 0;
