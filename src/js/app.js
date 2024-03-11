@@ -1,4 +1,4 @@
-import { displayWeather, getWeatherData } from "../js/components/searchBar.js";
+import { displayWeather, getWeatherData } from "./components/searchBar.js";
 
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.querySelector(".weather-form");

@@ -584,7 +584,7 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
 }
 
 },{}],"8lRBv":[function(require,module,exports) {
-var _searchBarJs = require("../js/components/searchBar.js");
+var _searchBarJs = require("./components/searchBar.js");
 document.addEventListener("DOMContentLoaded", ()=>{
     const form = document.querySelector(".weather-form");
     form.addEventListener("submit", async (e)=>{
@@ -598,26 +598,25 @@ document.addEventListener("DOMContentLoaded", ()=>{
     });
 });
 
-},{"../js/components/searchBar.js":"6eKpv"}],"6eKpv":[function(require,module,exports) {
+},{"./components/searchBar.js":"6eKpv"}],"6eKpv":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "getWeatherData", ()=>getWeatherData);
 var _axios = require("axios");
 var _axiosDefault = parcelHelpers.interopDefault(_axios);
 var _weather = require("../api/weather");
-const cityInput = document.querySelector(".city-input");
+var _weatherCard = require("./weatherCard");
 const getWeatherData = async (city)=>{
     const url = `${(0, _weather.WEATHER_BASE_URL)}?q=${city}&appid=${(0, _weather.weatherApiKey)}&units=metric`;
     try {
         const response = await (0, _axiosDefault.default).get(url);
-        console.log(response.data);
-    // displayWeather(response.data);
+        (0, _weatherCard.displayWeather)(response.data);
     } catch (error) {
         console.error("There was an error retrieving the weather data", error);
     }
 };
 
-},{"axios":"jo6P5","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","../api/weather":"5DdEV"}],"jo6P5":[function(require,module,exports) {
+},{"axios":"jo6P5","../api/weather":"5DdEV","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","./weatherCard":"dqhvw"}],"jo6P5":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "default", ()=>(0, _axiosJsDefault.default));
@@ -5029,6 +5028,42 @@ parcelHelpers.export(exports, "WEATHER_BASE_URL", ()=>WEATHER_BASE_URL);
 parcelHelpers.export(exports, "weatherApiKey", ()=>weatherApiKey);
 const WEATHER_BASE_URL = "https://api.openweathermap.org/data/2.5/weather";
 const weatherApiKey = "f68ae0d45b8ed69435a3318ac2f49257";
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"dqhvw":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "displayWeather", ()=>displayWeather);
+const displayWeather = (data)=>{
+    console.log(data);
+    // Selecționează containerul unde vrei să adaugi cardul de vreme
+    const weatherContainer = document.querySelector("#weather-container"); // Asumând că ai un element cu id="weather-container" în HTML-ul tău
+    // Creează elementul card de vreme
+    const weatherCard = document.createElement("div");
+    weatherCard.classList.add("weather-card");
+    // Adaugă conținutul cardului, bazat pe datele primate
+    weatherCard.innerHTML = `
+    <img src="https://openweathermap.org/img/wn/${data.weather[0].icon}.png" alt="Weather Icon" class="weather-icon" />
+    <h2 class="city-name">${data.name}</h2>
+    <p class="temperature">Temperature: ${Math.round(data.main.temp)}\xb0C</p>
+    <p class="min-max-temp">Min: ${Math.round(data.main.temp_min)}\xb0C | Max: ${Math.round(data.main.temp_max)}\xb0C</p>
+    <p class="humidity">Humidity: ${data.main.humidity}%</p>
+    <p class="pressure">Pressure: ${data.main.pressure} hPa</p>
+    <p class="wind-speed">Wind Speed: ${Math.round(data.wind.speed)} meter/sec</p>
+    <p class="sunrise-sunset">Sunrise: ${new Date(data.sys.sunrise * 1000).toLocaleTimeString([], {
+        hour: "2-digit",
+        minute: "2-digit"
+    })} | Sunset: ${new Date(data.sys.sunset * 1000).toLocaleTimeString([], {
+        hour: "2-digit",
+        minute: "2-digit"
+    })}</p>
+    <p class="feels-like">Feels Like: ${Math.round(data.main.feels_like)}\xb0C</p>
+    <p class="weather-description">${data.weather[0].description}</p>
+`;
+    // Verifică dacă există deja un card de vreme și îl înlocuiește, altfel adaugă noul card
+    const existingCard = weatherContainer.querySelector(".weather-card");
+    if (existingCard) weatherContainer.replaceChild(weatherCard, existingCard);
+    else weatherContainer.appendChild(weatherCard);
+};
 
 },{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["aP7aF","8lRBv"], "8lRBv", "parcelRequirea848")
 
